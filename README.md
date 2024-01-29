@@ -1,6 +1,13 @@
-# shellxec
+# ⚓ shellxec ⚓
 
-`shellxec` is a Python library for running shell commands on both Windows and Linux systems.
+<p style="font-size:17px;">
+<span style="background-color: #6e768166; padding: 3px;">Shellxec</span> 
+is a Python library for running shell commands on both Windows and Linux systems.
+This library can be used to execute shell command from Python. This can be used to run codes in other languages such as C++, Java or Rust directly from Python and can also retain results if required. </p>
+
+<p style="font-size:17px;"> Python is very much slow copared to other languages such as C++, Java or Rust. This library can be used to perform speed up the complex tasks and calculations by running them in other languages, while retaining the output in Python for further use.  </p>
+
+  
 
 ## Installation
 
@@ -14,13 +21,14 @@ pip install shellxec
 
 ### Basic Usage
 
-Import the `ShellExec` class and create an instance:
+Import the `shellxec` library and call the method for it:
 
 **Basic example to compile a CPP/C++ file**
 ```python
 import shellxec as sx
 
-command = "g++ main.cpp" 
+# Compile a CPP file 
+command = "g++ main.cpp"  
 sx.run_command(command)
 ```
 
@@ -28,15 +36,15 @@ sx.run_command(command)
 
 ```python
 command = "echo 'Hello, ShellExec!'"
-shellexec.run(command)
+sx.run_command(command)
 ```
 
-#### Run a Shell Command and Capture Output
+#### Run a Shell Command and Capture Output (String)
 
 ```python
 command = "echo 'Hello, ShellExec!'"
-output = shellexec.run_output(command)
-print("Output:", output)
+output = sx.run_command(command=command, output=True)
+print("Output: ", output)
 ```
 
 ### Advanced Usage
@@ -44,9 +52,18 @@ print("Output:", output)
 #### Run a Command in a Specific Directory
 
 ```python
-command = "ls"
-directory = "/path/to/directory"
-shellexec.run_in_directory(command, directory)
+command = "dir"
+directory = "hello"
+sx.run_command_in_directory(command, directory)
+```
+
+#### Run a Command in a Specific Directory while retaining the output (String)
+
+```python
+command = "dir"
+directory = "hello"
+result = sx.run_command_in_directory(command, directory, output=True)
+print(result)
 ```
 
 #### Run a Command with Custom Environment Variables
@@ -54,35 +71,45 @@ shellexec.run_in_directory(command, directory)
 ```python
 command = "echo $MY_VARIABLE"
 env = {"MY_VARIABLE": "Hello from ShellExec"}
-shellexec.run_with_env(command, env)
+sx.run_command_with_env_var(command, env)
+```
+#### Run a Command with Custom Environment Variables while retaining the output (String)
+
+```python
+command = "echo $MY_VARIABLE"
+env = {"MY_VARIABLE": "Hello from ShellExec"}
+result = sx.run_command_with_env_var(command, env, output=True)
+print(result)
 ```
 
 #### Run a Batch of Commands
 
 ```python
 commands = ["echo 'Command 1'", "echo 'Command 2'", "echo 'Command 3'"]
-shellexec.run_batch(commands)
+sx.run_commands_batch(commands)
+```
+#### Run a Batch of Commands while retaining the output (Array)
+
+```python
+commands = ["echo 'Command 1'", "echo 'Command 2'", "echo 'Command 3'"]
+result = sx.run_commands_batch(commands, output=True)
+print(result) 
 ```
 
 ## Running Tests
 
-To run the tests, use the following command:
+**Status: Still writing those test cases**
+<!-- To run the tests, use the following command: -->
 
-```bash
+<!-- ```bash
 python -m unittest test_shellxec.py
-```
+``` -->
 
 ## Contributing
-**Status**: Not open
+**Status: Not open**
 
-Contributions are not open for this project yet. Please check again in a week to stay updated for the status!
 <!-- Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests. -->
 
 ## License
 
-This project is not under any License - see the [LICENSE](LICENSE) file for details.
-
-In this template:
-
-- The "Installation" section provides a simple installation command using pip.
-- The "Usage" section includes basic and advanced usage examples, demonstrating how to run commands, capture output, and use additional features.
+This project is not under any License (YET).
