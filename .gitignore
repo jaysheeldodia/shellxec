@@ -1,0 +1,54 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Ignore build and distribution directories
+build/
+dist/
+
+# Ignore egg-info
+*.egg-info/
+
+# Ignore .pyc and .pyo files from tests directory
+test/__pycache__/
+test/*.pyc
+test/*.pyo
+test/*.pyd
+
+# Ignore .pyc and .pyo files from shellxec directory
+shellxec/__pycache__/
+shellxec/*.pyc
+shellxec/*.pyo
+shellxec/*.pyd
+
+# Ignore .pyc and .pyo files from root directory
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
+
+# Ignore environment file
+.env
