@@ -16,10 +16,12 @@ pip install shellxec
 
 Import the `ShellExec` class and create an instance:
 
+**Basic example to compile a CPP/C++ file**
 ```python
 import shellxec as sx
 
-shellexec = sx.ShellExec()
+command = "g++ main.cpp" 
+sx.run_command(command)
 ```
 
 #### Run a Shell Command
