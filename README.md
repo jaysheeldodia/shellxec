@@ -80,12 +80,9 @@ Contributions are not open for this project yet. Please check again in a week to
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is not under any License - see the [LICENSE](LICENSE) file for details.
 
 In this template:
 
 - The "Installation" section provides a simple installation command using pip.
 - The "Usage" section includes basic and advanced usage examples, demonstrating how to run commands, capture output, and use additional features.
-- The "Running Tests" section includes instructions for running tests.
-
-You can customize this template further based on your specific library features and requirements. If you have any additional sections or specific information you'd like to include, feel free to let me know!
