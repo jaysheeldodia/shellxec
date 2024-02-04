@@ -105,8 +105,11 @@ print(result)
 python -m unittest test_shellxec.py
 ``` -->
 
-## Contributing
-**Status: Not open**
+## Checklist:
+
+[ ] Test Cases
+
+[ ] Save To File Option
 
 <!-- Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests. -->
 
