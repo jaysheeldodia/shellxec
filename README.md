@@ -107,9 +107,9 @@ python -m unittest test_shellxec.py
 
 ## Checklist:
 
-[] Test Cases
 
-[] Save To File Option
+* [ ] Test Cases
+* [ ] Save To File Option
 
 <!-- Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests. -->
 
