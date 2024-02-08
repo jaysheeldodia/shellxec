@@ -1,4 +1,4 @@
-# <p style="text-align:center;"> ⚓ shellxec ⚓ </p>
+# <p align="center"> ⚓ shellxec ⚓ </p>
 
 <p style="font-size:17px;">
 <span style="background-color: #6e768166; padding: 3px;">Shellxec</span> 
