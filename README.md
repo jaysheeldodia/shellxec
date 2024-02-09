@@ -98,7 +98,7 @@ print(result)
 
 ## Running Tests
 
-**Status: Still writing those test cases**
+**Status: Wrote Tests (Need more test cases)**
 <!-- To run the tests, use the following command: -->
 
 <!-- ```bash
