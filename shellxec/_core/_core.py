@@ -62,7 +62,7 @@ def run_commands_batch(commands, output=None):
         for command in commands:
             result = run_command(command=command, output=output)
             output_list.append(result)
-        return output
+        return output_list
     else:
         for command in commands:
             run_command(command)
