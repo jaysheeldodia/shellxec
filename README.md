@@ -52,7 +52,7 @@ print("Output: ", output)
 #### Run a Command in a Specific Directory
 
 ```python
-command = "dir"
+command = <dir>
 directory = "hello"
 sx.run_command_in_directory(command, directory)
 ```
@@ -60,7 +60,7 @@ sx.run_command_in_directory(command, directory)
 #### Run a Command in a Specific Directory while retaining the output (String)
 
 ```python
-command = "dir"
+command = <dir>
 directory = "hello"
 result = sx.run_command_in_directory(command, directory, output=True)
 print(result)
