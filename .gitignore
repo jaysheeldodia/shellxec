@@ -52,3 +52,6 @@ shellxec/*.pyd
 
 # Ignore environment file
 .env
+
+# Virtual Environment Folder
+venv
