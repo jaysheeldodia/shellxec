@@ -107,6 +107,7 @@ python -m unittest test_shellxec.py
 
 ## Checklist:
 
+* [x] Start Documentation
 * [ ] Write more test cases
 * [ ] Check for PEP8 Standardization throughout the project
 * [ ] Save To File Option
